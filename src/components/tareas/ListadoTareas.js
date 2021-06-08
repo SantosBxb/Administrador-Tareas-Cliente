@@ -23,13 +23,13 @@ const ListadoTareas = () => {
         animate={{ scale: 0.99 }}
         transition={{ duration: 0.5 }}
         className="mt-5 shadow m-0 ">
-        <ul className="list-group list-group-flush bg-3 ">
+        <ul className="list-group list-group-flush bg-3 fw-bold">
           {tareasProyecto.length === 0 
             ? <p className='text-center mt-3'>No existen tareas para este proyecto</p>  
             :
             <Fragment>
               {tareasProyecto.map(tarea => (
-              <Tarea key={tarea.id} tarea={tarea}/>
+              <Tarea key={tarea._id} tarea={tarea}/>
               ))}
             </Fragment>
           }

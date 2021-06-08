@@ -31,7 +31,7 @@ const Tarea = ({ tarea }) => {
       transition={{ duration: 0.5 }}
       className="row bg-hover  ">
       <div className="col-5 d-inline-flex align-items-center flex-shrink-1 ">
-        <p className="">{tarea.nombre}</p>
+        <p className="m-0">{tarea.nombre}</p>
       </div>
 
       <div className="col-3 centrar m-2 flex-shrink-1">

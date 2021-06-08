@@ -78,8 +78,8 @@ const FormTarea = () => {
             type="text"
             className={
               errorTarea
-                ? "form-control is-invalid text-center"
-                : "form-control text-center"
+                ? "form-control is-invalid text-center form-control-lg"
+                : "form-control text-center form-control-lg"
             }
             describedby="errorTarea"
             placeholder="Nombre de Tarea"

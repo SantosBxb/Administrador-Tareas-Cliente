@@ -17,11 +17,11 @@ const Proyecto = ({proyecto}) => {
     <button 
       type="button"
       onClick={()=>SeleccionarProyecto()}
-      className="list-group-item list-group-item-action list-group-item-dark"
+      className="list-group-item list-group-item-action list-group-item-dark fw-bold"
       >
       {proyecto.nombre}
     </button>
   );
 }
- 
+
 export default Proyecto;

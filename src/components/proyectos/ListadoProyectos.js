@@ -29,7 +29,7 @@ const ListadoProyectos = () => {
           <h5>{alerta.msg}</h5>
         </div>
       ) : null}
-      <div className="list-group mt-5 shadow">
+      <div className="list-group mt-5 shadow ">
         {proyectos.map((proyecto) => (
           <Proyecto key={proyecto._id} proyecto={proyecto} />
         ))}
