@@ -1,0 +1,83 @@
+:root{
+  --color1:#16191C;
+  --color2: #1E2126; 
+  --color3: #ffffff;
+  --color4: #a1cbd8;
+  --color5: #0000000c;
+  --color6: #181515;
+  --color7: #30fa0c5d;
+
+}
+*{
+  margin: 0;
+}
+body {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 300;
+  color: var(--color3);
+  background-color:var(--color2)
+}
+
+.form-proyectos{
+  background-color:var(--color2);
+}
+.bg-0{
+  background-color:var(--color1);
+  color: var(--color3)
+}
+.bg-1{
+  background-color:var(--color1);
+  color: var(--color3)
+}
+.bg-1:hover{
+  color: var(--color4)
+}
+
+.bg-2{
+  background-color:var(--color1);
+  color: var(--color3)
+}
+.bg-3{
+  background-color:var(--color5);
+  color: var(--color3)
+}
+.bg-hover:hover{
+  color: var(--color4)
+}
+.alto{
+  max-height: 100vh;
+  min-height:99vh;
+}
+.lista-tareas{
+  margin:0 auto;
+
+  
+}
+.centrar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zi {
+  position: relative;
+}
+.zi-alert {
+  width: 90%;
+  position: absolute;
+  z-index: 10;
+}
+.zi-content {
+  z-index: 1;
+}
+.cerrar-sesion{
+  color: #f6c4c4;
+}
+.cerrar-sesion:hover{
+  font-weight: bold;
+  color: #ff0000
+}
+.c-s{
+  font-size:0.8em ;
+  color: #f6c4c4;
+}
