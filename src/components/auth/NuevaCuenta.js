@@ -33,7 +33,7 @@ const NuevaCuenta = (props) => {
     confirmar: "",
   });
 
-  const { nombre, email, password, confirmar } = usuario;
+  let { nombre, email, password, confirmar } = usuario;
 
   //fn onChange, captura datos form
   const onChange = (e) => {
@@ -70,7 +70,7 @@ const NuevaCuenta = (props) => {
     }
 
     // pasarlo al action 
-    email.email = email.email.toLowerCase();
+    email = email.toLowerCase();
     RegistrarUsuario({nombre, email, password})
   };
 

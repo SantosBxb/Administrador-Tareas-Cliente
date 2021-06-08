@@ -30,7 +30,7 @@ const Login = (props) => {
   });
 
   // desestructurar usuario
-  const { email, password } = usuario;
+  let { email, password } = usuario;
 
   //fn onChange, captura datos form
   const onChange = (e) => {
@@ -50,7 +50,7 @@ const Login = (props) => {
     }
 
     // pasarlo al action
-    email.email = email.email.toLowerCase();
+    email = email.toLowerCase();
     IniciarSesion({ email, password });
   };
 
