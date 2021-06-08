@@ -55,9 +55,9 @@ const Login = (props) => {
   };
 
   return (
-    <div className="row g-0 align-content-center">
-      <div className="col-lg-4"></div>
-      <div className="col-lg-4 zi">
+    <div className="row g-0 align-content-center position-relative alto">
+      <div className="col-lg-3"></div>
+      <div className="col-lg-6 zi">
         {alerta ? (
           <div
             className={` zi-alert top-50 start-50 translate-middle pt-5 text-center alert alert-${alerta.categoria}`}
@@ -65,41 +65,46 @@ const Login = (props) => {
             <h5>{alerta.msg}</h5>
           </div>
         ) : null}
-        <div className="card bg-2 pb-2 shadow border-0 rounded-5 mt-4 zi-content">
+        <div className="centrar card bg-2 pb-2 shadow border-0 rounded-5 mt-4 zi-content ">
           <h1 className="text-center mt-5 card-title">Bienvenido</h1>
-          <form onSubmit={onSubmit} className="card-body form">
-            <label className="form-label mt-5" htmlFor="email">
-              Email
-            </label>
-            <input
-              type="email"
-              className="form-control"
-              id="email"
-              name="email"
-              placeholder="ejemplo@email.com"
-              onChange={onChange}
-              value={email}
-            />
-            <label className="form-label mt-3" htmlFor="password">
-              Contraseña
-            </label>
-            <input
-              type="password"
-              className="form-control "
-              id="password"
-              name="password"
-              placeholder="********"
-              onChange={onChange}
-              value={password}
-            />
+          <form onSubmit={onSubmit} className="card-body w-100">
+            <div className="form-floating mx-3">
+              <input
+                type="email"
+                placeholder="ejemplo@email.com"
+                className="form-control"
+                id="email"
+                name="email"
+                onChange={onChange}
+                value={email}
+              />
+              <label className="text-dark" htmlFor="email">Email</label>
+            </div>
 
-            <div className="d-grid mt-4 ">
+            <div className="form-floating  mx-3 mt-4">
+              <input
+                type="password"
+                className="form-control "
+                id="password"
+                name="password"
+                placeholder="********"
+                onChange={onChange}
+                value={password}
+              />
+              <label
+                className="text-dark"
+                htmlFor="password"
+              >
+                Contraseña
+              </label>
+            </div>
+            <div className="d-grid my-5 ">
               <input
                 type="submit"
-                className="btn btn-primary"
+                className="btn btn-primary btn-lg  mx-3 "
                 value="Iniciar Sesión"
               />
-              <div className="form-text">
+              <div className="form-text text-center mt-3">
                 ¿Aún no tienes una cuenta?{" "}
                 <Link to={"/nueva-cuenta/"}>Crear Cuenta</Link>
               </div>
@@ -108,7 +113,7 @@ const Login = (props) => {
         </div>
       </div>
 
-      <div className="col-lg-4"></div>
+      <div className="col-lg-3"></div>
     </div>
   );
 };

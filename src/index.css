@@ -8,10 +8,12 @@
   --color7: #30fa0c5d;
 
 }
+
 *{
   margin: 0;
 }
 body {
+  height:100vh;
   font-family: 'Spartan', sans-serif;
   font-weight: 300;
   color: var(--color3);
@@ -80,4 +82,12 @@ body {
 .c-s{
   font-size:0.8em ;
   color: #f6c4c4;
+}
+
+.alto{
+  height: 90vh;
+}
+
+.centrar{
+  margin:0 auto;
 }
