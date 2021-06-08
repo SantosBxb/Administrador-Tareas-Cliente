@@ -13,15 +13,15 @@ const Login = (props) => {
 
   // useEffecct, en caso de que el password o usuario no exista
   useEffect(() => {
-    if(autenticado){
-      props.history.push('/proyectos')
+    if (autenticado) {
+      props.history.push("/proyectos");
     }
-    if(mensaje){
-      MostrarAlerta(mensaje.msg, mensaje.categoria)
+    if (mensaje) {
+      MostrarAlerta(mensaje.msg, mensaje.categoria);
     }
-    
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mensaje, autenticado, props.history])
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mensaje, autenticado, props.history]);
 
   // state usuario
   const [usuario, setUsuario] = useState({
@@ -50,6 +50,7 @@ const Login = (props) => {
     }
 
     // pasarlo al action
+    email.email = email.email.toLowerCase();
     IniciarSesion({ email, password });
   };
 

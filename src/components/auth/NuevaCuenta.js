@@ -70,6 +70,7 @@ const NuevaCuenta = (props) => {
     }
 
     // pasarlo al action 
+    email.email = email.email.toLowerCase();
     RegistrarUsuario({nombre, email, password})
   };
 
